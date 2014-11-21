@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+		<link href="dist/css/bootstrap.css" rel="stylesheet">
+		<link href="main2.css" rel="stylesheet" type="text/css">
+
+		<!--Below is upload plugin -->
+		  <meta charset="utf-8"/>
+        <!-- Google web fonts -->
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+        <!-- The main CSS file -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<nav class="nav navbar-default navbar-fixed-top">
+			<div class="container">
+			<div class="navbar-header"><img id="logo" src="everydayproject.jpg"/></div>
+
+			<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#about">about</a></li>
+				<li><a href="diaries">see the diaries</a></li>
+				<li><a href="#action">contribute</a></li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>What do bankers actually do every day?</h1>
+			<div class="row">
+				<div class="col-sm-7">
+					<img id="diary" class="img-responsive" src="diary.jpg"/>
+				</div>
+				<div class="col-sm-5">
+					<p>Too often we make choose careers based on company credentials and kudos.</p> 
+					<p>But it's what we spend our time <em>doing</em> that determines whether we're happy at work.</p> 
+
+					<p>We'll only understand what people do, if we tell each other.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="action">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 id="calltoaction">Help people choose jobs they'll enjoy. <br /> Show them what your diary looked like last week</h2>
+				</div>
+<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+            <div id="drop">
+                Drop Here
+
+                <a>Browse</a>
+                <input type="file" name="upl" multiple />
+            </div>
+
+            <ul>
+                <!-- The file uploads will be shown here -->
+            </ul>
+
+        </form>	
+			</div>
+
+		</div>
+
+
+
+	<!--<div id="signup">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="description">FoodFund enables you to eat well for less. Crowdfund food purchases with others to get wholesale prices</p>
+
+		<p class="calltoaction">Interested? Sign up to get news here</p>
+		<input type="email" placeholder="Your e-mail">
+		<input type="submit">
+				</div>
+			</div>
+		</div>
+	</div>-->
+<!-- JavaScript Includes -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.knob.js"></script>
+
+        <!-- jQuery File Upload Dependencies -->
+        <script src="assets/js/jquery.ui.widget.js"></script>
+        <script src="assets/js/jquery.iframe-transport.js"></script>
+        <script src="assets/js/jquery.fileupload.js"></script>
+
+        <!-- Our main JS file -->
+        <script src="assets/js/script.js"></script>
+	</body>
+</html>
