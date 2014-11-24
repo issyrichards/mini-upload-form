@@ -63,3 +63,23 @@ button {
 #submit {
 	overflow: hidden
 }
+
+iframe {
+	overflow:hidden;
+}
+
+@media (max-width: 1200px) {
+	.col-sm-5 {
+		padding-top:80px;
+		}
+	}
+
+@media (max-width: 990px) {
+	.jumbotron p {
+		font-size:15px;
+		}
+	.col-sm-5 {
+		padding-top:60px;
+		}
+	}
+
