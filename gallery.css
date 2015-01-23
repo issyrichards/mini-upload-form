@@ -7,3 +7,19 @@ body, html
             {
                 position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
             }
+
+ul {
+	margin-top: 37px;
+}
+.skills {
+	list-style: none;
+	margin-left: -47px;
+}
+
+#skillsheading {
+	margin-top: 123px;
+}
+
+a {
+	color: black;
+}
