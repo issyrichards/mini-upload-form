@@ -1,12 +1,13 @@
 body, html
             {
-                margin: 0; padding: 0; height: 100%; overflow: hidden;
+                margin: 0; padding: 0; height: 100%;
             }
 
             #content
             {
                 position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
             }
+
 
 ul {
 	margin-top: 37px;
@@ -22,4 +23,32 @@ ul {
 
 a {
 	color: black;
+}
+
+@media (max-width: 768px) {
+.skills {display: none;}
+#skillsheading  {display: none;}
+}
+
+.navbar-inner {
+    margin-right: 100px;
+}
+
+.navbar-inner li {
+    padding: 2px;
+}
+
+iframe {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        margin-top: 30px;
+    }
+}
+
+/*.col-sm {
+    text-align: left;
+    font-size: 14px;
 }

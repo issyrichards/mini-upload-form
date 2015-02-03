@@ -8,15 +8,15 @@
 	margin: 20px 0;
 }
 
-.nav{
+#wholebar{
 	background-color: white;
 	border-bottom-style: solid;
 	border-bottom-color:#0e1717;
 	border-bottom-width: 1px;
 }
 
-.nav .navbar-right {
-	border-bottom-style:none;
+.navbar-right {
+	border-bottom-width:0px;
 	margin-top:15px;
 }
 
@@ -45,14 +45,19 @@
 	font-size: 20px;
 }
 
-.col-sm-5 {
-	padding-top: 110px;
+#pitch {
+	padding-top: 87px;
 	vertical-align: middle;
 }
 
+@media (max-width: 992px) {
+	#pitch {
+		padding-top:50px;
+	}
+}
 .instructions {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding-top: 341px;
+	padding-top: 145px;
 	max-width:600px;
 	font-size:20px;
 	padding-left: 50px;
@@ -86,7 +91,7 @@ iframe {
 }
 
 @media (max-width: 1200px) {
-	.col-sm-5 {
+	.pitch {
 		padding-top:80px;
 		}
 	}
@@ -94,9 +99,6 @@ iframe {
 @media (max-width: 990px) {
 	.jumbotron p {
 		font-size:15px;
-		}
-	.col-sm-5 {
-		padding-top:60px;
 		}
 	}
 
@@ -114,4 +116,33 @@ iframe {
 	#logo {
 		margin: -7px 0 -32px 0;
 }
+}
+
+#skillsdropdown {
+	display:none;
+}
+
+@media (max-width: 768px) {
+	#skillsdropdown {
+		display:initial;
+	}
+
+@media (max-width: 768px) {
+	#calltoaction {
+		font-size: 24px;}
+		#pitch {
+			line-height: 13.1px;
+		}
+		.instructions {
+			padding-top: 60px;
+		}
+}
+/*@media (max-width: 768px) {
+	#skillsbar {
+		display:none;
+	}
+}
+}
+
+
 	

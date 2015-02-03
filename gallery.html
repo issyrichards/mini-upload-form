@@ -1,5 +1,9 @@
 <html>	
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+		<script src="dist/js/bootstrap.js"></script>
+
 		<link href="dist/css/bootstrap.css" rel="stylesheet">
 		<link href="gallery.css" rel="stylesheet" type="text/css">
 		<link href="main2.css" rel="stylesheet" type="text/css">
@@ -7,34 +11,90 @@
 	</head>
 
 <body>
-	<nav class="nav navbar-default navbar-fixed-top">
-			<div class="container">
-			<div class="navbar-header"><a href="index.html"><img id="logo" src="everydayproject.jpg"/></a></div>
+	<nav id="wholebar" class="nav navbar navbar-default navbar-fixed-top">
+		<div class="navbar-inner">
+			<a href="index.html" class="navbar-header"><img id="logo" class="img-responsive" src="everydaylarge4.jpg"/></a>
+			<ul role="navigation" class="nav pull-right">
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">menu<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#about">about</a></li>
+						<li><a href="gallery.html">see the diaries</a></li>
+						<li><a href="#action">contribute</a></li>
+					</ul>
+				</li>
+			</ul>
 
-			<div class="collapse navbar-collapse">
+			<ul id="skillsdropdown" role="navigation" class="nav pull-right">
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">skills search<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="gallery.html">all skills</a></li>
+						<li><a href="galleryspread.html">spreadsheets</a></li>
+						<li><a href="gallerypres.html">presentions</a></li>
+						<li><a href="galleryemails.html">emails</a></li>
+						<li><a href="gallerymeetings.html">meetings</a></li>
+						<li><a href="gallerycreat.html">creativity</a></li>
+						<li><a href="galleryphone.html">phonecalls</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--<nav class= "nav navbar navbar-default navbar-fixed-top">
+			<div class="container">
+
+				<a href="index.html" class="navbar-header"><img id="logo" class="img-responsive" src="everydaylarge4.jpg"/></a>
+				
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#about">about</a></li>
 				<li><a href="gallery.html">see the diaries</a></li>
 				<li><a href="#action">contribute</a></li>
+				<li class="divider"></li>
+
+				<li class="menuskills"><a href="gallery.html">all skills</a></li>
+				<li class="menuskills"><a href="galleryspread.html">spreadsheets</a></li>
+				<li class="menuskills"><a href="gallerypres.html">presentions</a></li>
+				<li class="menuskills"><a href="galleryemails.html">emails</a></li>
+				<li class="menuskills"><a href="gallerymeetings.html">meetings</a></li>
+				<li class="menuskills"><a href="gallerycreat.html">creativity</a></li>
+				<li class="menuskills"><a href="galleryphone.html">phonecalls</a></li>
 			</ul>
+
+				</div>
 			</div>
-		</div>
-		</nav>
+		</nav> !-->
+
 <div class="container">
 	<div class="row">
-		<div class="col-sm-3">
-			<h4 id="skillsheading">specific skills</h4>
-			<ul>
-				<li class="skills"><a href="gallery.html">all skills</a></li>
-				<li class="skills"><a href="galleryspread.html">spreadsheets</a></li>
-				<li class="skills"><a href="gallerypres.html">presentions</a></li>
-				<li class="skills"><a href="galleryemails.html">emails</a></li>
-				<li class="skills"><a href="gallerymeetings.html">meetings</a></li>
-				<li class="skills"><a href="gallerycreat.html">creativity</a></li>
-				<li class="skills"><a href="galleryphone.html">phonecalls</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-9">
+		<div id="skillsbar" class="col-sm-2">
+
+			<!--<div class="btn-group">
+				<button type="button" class="btn btn-default">specific skills</button>
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>!-->
+				<h4 id="skillsheading">specific skills</h4>
+				<ul>
+					<li class="skills"><a href="gallery.html">all skills</a></li>
+					<li class="skills"><a href="galleryspread.html">spreadsheets</a></li>
+					<li class="skills"><a href="gallerypres.html">presentions</a></li>
+					<li class="skills"><a href="galleryemails.html">emails</a></li>
+					<li class="skills"><a href="gallerymeetings.html">meetings</a></li>
+					<li class="skills"><a href="gallerycreat.html">creativity</a></li>
+					<li class="skills"><a href="galleryphone.html">phonecalls</a></li>
+				</ul>
+			</div>
+		<div class="col-xs-12 col-sm-10">
 			<iframe src="http://issyrichards32.tumblr.com/" width="100%" height="100%" frameborder="0"></iframe>
 		</div>
 </div>
